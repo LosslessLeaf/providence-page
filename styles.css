@@ -1,0 +1,125 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    color: #10475a;
+}
+
+
+.navbar {
+    border-bottom: 2px solid #10475a;
+    height: 70px;
+}
+
+.navbar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.languages {
+    font-size: .9em;
+    
+}
+.languages select {
+    width: 140px;
+    padding-left: 5px;
+    height: 25px;
+    color: #10475a;
+    border: 1px solid #10475a;
+    font-weight: 400;
+    font-size: .9em;
+}
+
+.nav-text {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.icons {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.icons i {
+    margin-left: 25px;
+    color: #10475a;
+}
+
+.nav {
+    height: 70px;
+    color: #888;
+}
+.nav ul li {
+    display: inline-block;
+    letter-spacing: 1px;
+    font-size: .9em;
+}
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    padding: 25px 25px 18px 24px;
+}
+
+.nav-link:hover {
+    border-bottom: 5px solid #e56f00;
+}
+
+.navbar-menu li {
+    width: 15%;
+    text-align: center;
+}
+#dbw {
+    width: 18%;
+}
+
+.dropbtn {
+    background-color: inherit;
+    border: none;
+    color: inherit;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    margin-top: 20px;
+    color: #10475a;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 20px 25px;
+    border: 1px solid #eee;
+}
+
+.dropdown:hover .dropdown-content {
+    border-top: 5px solid #e56f00;
+    display: block;
+}
+
+
+
+
+
+
+.jumbotron {
+    background-image: url(http://www.providenceri.gov/wp-content/uploads/2016/09/PVD.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+}
+
