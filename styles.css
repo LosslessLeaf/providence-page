@@ -240,8 +240,9 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 100;
     letter-spacing: .8px;
-    color: #000;
+    color: #666;
     height: 175px;
+    line-height: 1.4;
 }
 .date {
     display: inline-block;
@@ -256,7 +257,26 @@ body {
     font-weight: 700;
 }
 
+.second-section {
+    display: flex;
+    margin-top: 40px;
+}
 
+.prov-311 {
+    background-color: #e56f00;
+    height: 400px;
+    flex: 2;
+}
+
+.prov-311 p {
+    
+    margin: 0 auto;
+}
+
+.city-services {
+    flex: 3;
+    background-color: #efefef;
+}
 
 /*MEDIA QUERIES*/
 
