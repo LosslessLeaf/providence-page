@@ -224,8 +224,8 @@ body {
     margin: 10px;
     border: 1px solid #ddd;
     transition: .2s;
-    text-overflow: ellipsis;
 }
+
 .news-card:hover {
     background-color: #E9E9E9;
 }
@@ -259,12 +259,12 @@ body {
 
 .second-section {
     display: flex;
-    margin-top: 40px;
+    margin: 40px 0;
+    height: 250px;
 }
 
 .prov-311 {
     background-color: #e56f00;
-    height: 400px;
     flex: 2;
 }
 
@@ -279,6 +279,7 @@ body {
 }
 
 /*MEDIA QUERIES*/
+/*=============*/
 
 @media screen and (max-width: 1200px) {
 
