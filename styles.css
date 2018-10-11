@@ -132,7 +132,7 @@ body {
 
 
 .jumbotron {
-    background-image: url(http://www.providenceri.gov/wp-content/uploads/2016/09/PVD.jpg);
+    background-image: url(https://www.providenceri.gov/wp-content/uploads/2016/09/PVD.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -334,6 +334,7 @@ body {
 
 .open-providence {
     flex: 4;
+    padding: 40px;
     display: flex;
     justify-content: space-around;
     align-self: center;
@@ -410,16 +411,50 @@ body {
     display: flex;
     flex-direction: column;
     width: 400px;
-    
     align-self: center;
 }
+.news-header {
+    text-transform: uppercase;
+    font-size: .8em;
+    font-family: "Source Sans Pro";
+}
 .news-signup label {
-    width: 15%
+    width: 15%;
+    font-weight: 700;
+    font-size: .8em;
+    font-family: "Source Sans Pro";
+    text-align: right;
+    
 }
 .news-signup input {
     width: 80%;
+    margin: 5px 0 5px 5px;
+    padding: 8px;
+    background-color: #efefef;
+    border: 1px solid #cecece;
+    box-shadow: inset 1px 1px 1px #cecece;
+    border-radius: 3px;
 }
 
+.submit {
+    text-align: right;
+    margin-top: 15px;
+}
+.submit>a {
+    text-align: right;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #e56f00;
+    color: #e56f00;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.submit>a:hover {
+    background-color: #e56f00;
+    color: #fff;
+}
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -430,6 +465,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.2em;
+    letter-spacing: 2px;
 }
 .contact-info ul {
     padding: 20px 0;
@@ -437,9 +473,8 @@ body {
 }
 .contact-info ul li {
     list-style-type: none;
-    padding: 2px 0;
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 300;
     color: #555;
 }
@@ -461,6 +496,54 @@ body {
     color: #fff;
     
 }
+
+.follow-us {
+    color: #3894ac;
+    margin-top: 40px;
+    font-size: .9em;
+    font-weight: 700;
+}
+.follow-us i {
+    font-size: 2.5em;
+    padding: 10px;
+}
+
+.follow-us a:hover {
+    color: #10475a;
+}
+
+
+.footer {
+    height: 75px;
+    display: flex;
+    background-color: #10475a;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer ul {
+    align-self: center;
+    font-size: 1em;
+    font-weight: 700;
+    list-style-type: none;
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.footer ul li {
+    display: inline-block;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer ul li a:hover {
+    color: #3894ac;
+}
+.no-list {
+    font-weight: 400;
+}
+
 /*MEDIA QUERIES*/
 /*=============*/
 
