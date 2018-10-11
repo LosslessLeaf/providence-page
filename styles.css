@@ -224,6 +224,8 @@ body {
     margin: 10px;
     border: 1px solid #ddd;
     transition: .2s;
+    display: flex;
+    flex-direction: column;
 }
 
 .news-card:hover {
@@ -236,18 +238,18 @@ body {
     
 }
 .news-card p {
-    font-size: .9em;
     font-family: "Source Sans Pro", sans-serif;
-    font-weight: 100;
-    letter-spacing: .8px;
     color: #666;
     height: 175px;
     line-height: 1.4;
+    align-self: center;
+    text-overflow: ellipsis;
 }
 .date {
     display: inline-block;
     font-size: .8em;
     color: #10475a;
+    flex: 1;
 }
 .read-more {
     color: #e56f00;
@@ -255,29 +257,210 @@ body {
     display: inline-block;
     margin-left: 90px;
     font-weight: 700;
+    flex: 1;
 }
 
 .second-section {
     display: flex;
     margin: 40px 0;
-    height: 250px;
+    height: 275px;
 }
 
 .prov-311 {
     background-color: #e56f00;
     flex: 2;
+    display: flex;
+    justify-content: center;
 }
 
-.prov-311 p {
-    
-    margin: 0 auto;
+.prov-311 img {
+    align-self: center;
 }
+
 
 .city-services {
     flex: 3;
     background-color: #efefef;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
+.cs-box {
+    align-self: center;
+    width: 70%;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.cs-box h4 {
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.cs-box h6 {
+    font-size: 1em;
+    padding-bottom: 30px;
+}
+
+.cs-box a {
+    text-decoration: none;
+    padding: 14px 25px;
+    background-color: #fff;
+    border: 2px solid #3894ac;
+    color: #3894ac;
+    transition: .2s;
+}
+
+.cs-box a:hover {
+    background-color: #3894ac;
+    color: #fff;
+}
+
+
+
+.open-providence-container {
+    display: flex;
+    height: 800px;
+    margin-top: 60px;
+    
+    background-color: #fafafa;
+}
+
+.city-hall-img {
+    flex: 3;
+    background: url(https://www.providenceri.gov/wp-content/uploads/2017/06/CiyHall.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.open-providence {
+    flex: 4;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.open-prov-interior {
+    display: flex;
+    flex-direction: column;
+}
+
+.op-title-card {
+    padding: 10px;
+}
+
+.op-title-card h2 {
+    font-size: 2.2em;
+}
+
+.op-title-card h3 {
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+}
+
+.op-cards-box {
+    display: flex;
+    
+}
+
+.op-cards-box-int {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.op-card {
+    display: flex;
+    height: 150px;
+}
+
+.icon-box {
+    flex: 1.5;
+    text-align: center;
+    font-size: 1.5em;
+}
+.details-box {
+    flex: 10;
+}
+.details-box h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #10475a;
+}
+
+.details-box p {
+    color: #222;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 100;
+}
+
+.details {
+    color: #e56f00;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.news-and-contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+.news-signup {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    
+    align-self: center;
+}
+.news-signup label {
+    width: 15%
+}
+.news-signup input {
+    width: 80%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.contact-info h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.contact-info ul {
+    padding: 20px 0;
+    list-style-position: inside;
+}
+.contact-info ul li {
+    list-style-type: none;
+    padding: 2px 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #555;
+}
+.contact-info ul li a {
+    color: #3894ac;
+}
+
+.contact-info>a {
+    color: #3894ac;
+    border: 2px solid #3894ac;
+    padding: 25px 30px;
+    text-decoration: none;
+    text-align: center;
+    transition: .2s;
+}
+
+.contact-info>a:hover {
+    background-color: #3894ac;
+    color: #fff;
+    
+}
 /*MEDIA QUERIES*/
 /*=============*/
 
