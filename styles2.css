@@ -1,0 +1,165 @@
+/* COLORS */
+/*BLUE: #10457a*/
+/*ORANGE: #e56f00*/
+/*O-BLUE: #005d73;*/
+/*LIGHTEST BLUE: #3894ac*/
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "navbar" "hero" "sidenav" "cards" "info" "services" "footer" "copyright";
+}
+
+.navbar {
+    width: 100%;
+    display: grid;
+    grid-area: navbar;
+    background-color: #fff;
+    grid-template-areas: "prov-logo languages search access";
+    grid-template-columns: 25% 40% 17.5% 17.5%;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.nav2 {
+    grid-area: nav2;
+}
+
+.prov-logo {
+    grid-area: prov-logo;
+    padding-left: 20px;
+}
+
+.languages {
+    grid-area: languages;
+    font-size: .65em;
+    font-family: inherit;
+}
+
+.languages select {
+    width: 100px;
+    padding: 5px;
+    color: #005d73;
+    border-style: none;
+    border: 1px solid #10475a;
+    border-radius: 2px;
+}
+
+.search {
+    grid-area: search;
+}
+.search a {
+    padding: 10px;
+    color: #10475a;
+}
+
+.search i {
+    font-size: 2em;
+}
+.access {
+    grid-area: access;
+    padding-left: 10px;
+}
+.access a {
+    padding: 10px;
+    color: #10475a;
+}
+.access i {
+    font-size: 2em;
+}
+.hero {
+    grid-area: hero;
+    background: url(https://www.providenceri.gov/wp-content/uploads/2016/09/PVD.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+}
+
+
+.sidenav {
+    grid-area: sidenav;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: Montserrat, sans-serif;
+}
+
+.sidenav h1 {
+    padding-top: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: .9em;
+    font-weight: 700;
+    letter-spacing: .3px;
+    color: #10475a;
+    text-align: center;
+}
+.sidenav a {
+    font-size: .95em;
+    width: 90%;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #eee;
+    text-transform: uppercase;
+    background-color: #e56f00;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.sidenav h2 {
+    font-size: .9em;
+    padding: 10px 0 10px 25px;
+    letter-spacing: .3px;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    background-color: #005d73;
+    width: 90%;
+    margin: 20px auto 0;
+}
+.sidenav ul {
+    background-color: #10475a;
+    list-style-type: none;
+    width: 90%;
+    margin: 0 auto;
+    color: #ccc;
+    padding: 20px 0 25px 20px;
+}
+.sidenav ul li {
+    padding: 5px;
+}
+.cards {
+    grid-area: cards;
+    
+}
+
+.info {
+    grid-area: info;
+    background-color: blue;
+}
+
+.services {
+    grid-area: services;
+    background-color: indigo;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: violet;
+}
+
+.copyright {
+    grid-area: copyright;
+    background-color: grey;
+}
