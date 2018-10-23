@@ -198,12 +198,77 @@ body {
 }
 .info {
     grid-area: info;
-    background-color: blue;
+    font-family: Montserrat, sans-serif;
+    width: 90%;
+    margin: 0 auto;
+}
+.prov-311 {
+    background-image: url(https://www.providenceri.gov/wp-content/uploads/2016/09/group-3.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e56f00;
+    height: 220px;
+}
+.request {
+    background-color: #f9f9f9;
+    border: 1px solid #efefef;
+    box-shadow: .5px .5px .5px .5px #fefefe;
+    height: 240px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.request h4 {
+    color: #10475a;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.7px;
+    width: 90%;
+    padding-top: 40px;
+    margin: 0 auto;
 }
 
+.request h5 {
+    color: #6a6a6a;
+    font-size: .9em;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.request a {
+    font-family: "Source Sans Pro", sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+    color: #3894ac;
+    padding: 15px 15px;
+    align-self: center;
+    background-color: #fff;
+    border: 2px solid #3894ac;
+    transition: .2s;
+}
+.request a:hover {
+    background-color: #3894ac;
+    color: #fff;
+}
 .services {
     grid-area: services;
-    background-color: indigo;
+    background-color: #f9f9f9;
+}
+.services>h6 {
+    font-family: Montserrat, sans-serif;
+    color: #10475a;
+    padding-left: 10px;
+}
+
+.services h6:nth-child(1) {
+    margin: 0;
+    padding-top: 20px;
 }
 
 .footer {
