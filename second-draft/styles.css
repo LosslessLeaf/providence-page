@@ -1,7 +1,11 @@
 /* COLORS */
+
 /*BLUE: #10457a*/
+
 /*ORANGE: #e56f00*/
+
 /*O-BLUE: #005d73;*/
+
 /*LIGHTEST BLUE: #3894ac*/
 
 body {
@@ -28,13 +32,66 @@ body {
     grid-template-areas: "prov-logo languages search access";
     grid-template-columns: 25% 40% 17.5% 17.5%;
     padding: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #10475a;
 }
 
 .nav2 {
     grid-area: nav2;
+    display: none;
+}
+.nav2 ul {
+    list-style-type: none;
+    padding: 0;
 }
 
+.city-hall {
+    position: relative;
+    width: 100%;
+}
+
+.city-hall-dropdown {
+    display: none;
+    position: absolute;
+    
+}
+.city-hall-dropdown a {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.city-hall-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+.city-hall:hover .city-hall-dropdown {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    left: 0;
+}
+
+.doing-business {
+    position: relative;
+}
+.doing-business-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.doing-business-dropdown a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+}
+.doing-business:hover .doing-business-dropdown {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+}
 .prov-logo {
     grid-area: prov-logo;
     padding-left: 20px;
@@ -58,6 +115,7 @@ body {
 .search {
     grid-area: search;
 }
+
 .search a {
     padding: 10px;
     color: #10475a;
@@ -66,17 +124,21 @@ body {
 .search i {
     font-size: 2em;
 }
+
 .access {
     grid-area: access;
     padding-left: 10px;
 }
+
 .access a {
     padding: 10px;
     color: #10475a;
 }
+
 .access i {
     font-size: 2em;
 }
+
 .hero {
     grid-area: hero;
     background: url(https://www.providenceri.gov/wp-content/uploads/2016/09/PVD.jpg);
@@ -106,7 +168,8 @@ body {
     color: #10475a;
     text-align: center;
 }
-.sidenav a {
+
+.sidenav>a {
     font-size: .95em;
     text-decoration: none;
     color: #eee;
@@ -118,7 +181,7 @@ body {
     transition: .2s;
 }
 
-.sidenav a:hover {
+.sidenav>a:hover {
     background-color: #fff;
     color: #e56f00;
 }
@@ -135,32 +198,58 @@ body {
     margin: 0;
     margin-top: 20px;
 }
+
 .sidenav ul {
     background-color: #10475a;
     list-style-type: none;
     color: #ccc;
-    padding: 20px 0 25px 20px;
+    padding: 20px 0 20px 30px;
 }
+
 .sidenav ul li {
-    padding: 5px;
+    width: 90%;
+    line-height: 1.5;
+    color: #ccc;
+    margin-bottom: 10px;
 }
+
+.sidenav ul a {
+    text-decoration: none;
+    display: block;
+}
+
+.sidenav ul li:hover {
+    color: #fff;
+}
+
 .cards {
     grid-area: cards;
     width: 90%;
     margin: 0 auto;
     margin-top: 30px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
 .card {
+    box-shadow: 0px 1px 1px 1px #f1f1f1;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 20px;
+}
+
+.cards a {
+    text-decoration: none;
     margin-bottom: 20px;
 }
+
+.card:hover {
+    background-color: #f0f0f0;
+}
+
 .card h3 {
     font-family: Montserrat, sans-serif;
     font-size: .85em;
@@ -196,29 +285,38 @@ body {
 .arrow {
     color: #e56f00;
 }
+
 .info {
     grid-area: info;
     font-family: Montserrat, sans-serif;
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
+
 .prov-311 {
     background-image: url(https://www.providenceri.gov/wp-content/uploads/2016/09/group-3.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #e56f00;
     height: 220px;
+    flex: 1;
 }
+
 .request {
     background-color: #f9f9f9;
     border: 1px solid #efefef;
     box-shadow: .5px .5px .5px .5px #fefefe;
     height: 240px;
     margin-bottom: 50px;
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
+
 .request h4 {
     color: #10475a;
     font-family: Montserrat, sans-serif;
@@ -237,10 +335,11 @@ body {
     width: 90%;
     margin: 0 auto;
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     line-height: 1.5;
     font-family: "Source Sans Pro", sans-serif;
 }
+
 .request a {
     font-family: "Source Sans Pro", sans-serif;
     text-decoration: none;
@@ -252,31 +351,384 @@ body {
     border: 2px solid #3894ac;
     transition: .2s;
 }
+
 .request a:hover {
     background-color: #3894ac;
     color: #fff;
 }
+
 .services {
     grid-area: services;
     background-color: #f9f9f9;
-}
-.services>h6 {
-    font-family: Montserrat, sans-serif;
-    color: #10475a;
-    padding-left: 10px;
+    padding: 10px;
 }
 
-.services h6:nth-child(1) {
+.services h5 {
+    font-family: Montserrat, sans-serif;
+    color: #10475a;
+    letter-spacing: -0.7px;
     margin: 0;
-    padding-top: 20px;
+    margin: 10px 0;
+}
+
+.services h6 {
+    font-family: "Alegreya Sans", sans-serif;
+    color: #3894ac;
+    letter-spacing: .3px;
+    font-size: .9em;
+    margin: 0;
+}
+
+.service-cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.icon-bar {
+    flex: 1;
+    padding-left: 5px;
+}
+
+.details {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+}
+
+.align {
+    padding-left: 5px;
+}
+
+.service-title {
+    color: #10475a;
+    text-transform: uppercase;
+}
+
+.details p {
+    font-size: .8em;
+    color: #888;
+    letter-spacing: -0.7px;
+    line-height: 1.5;
+    width: 80%;
+}
+
+.service-details {
+    font-family: "Source Sans Pro", sans-serif;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9em;
+    color: #e56f00;
+    letter-spacing: 1px;
 }
 
 .footer {
     grid-area: footer;
-    background-color: violet;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-bottom: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.signup {
+
+    margin-bottom: 30px;
+}
+
+.signup-header {
+    border-bottom: 1px solid #e1e1e1;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.signup h6 {
+    color: #10475a;
+    font-family: inherit;
+    padding-left: 20px;
+    letter-spacing: -0.7px;
+    font-size: .9em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.signup form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.signup label {
+    width: 20%;
+    font-family: inherit, sans-serif;
+    font-size: .8em;
+    font-weight: 700;
+    color: #10475a;
+    margin-bottom: 15px;
+}
+
+.signup input {
+    background-color: #f1f1f1;
+    border: 1px solid #eee;
+    box-shadow: .5px .5px 0px 0px #ccc inset;
+    border-radius: 2px;
+    padding: 5px;
+    width: 70%;
+}
+
+.signup form a {
+    flex: 1;
+    color: #e56f00;
+    font-size: 1.4em;
+
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    display: inline-block;
+    text-align: right;
+    margin-left: 38%;
+    padding: 15px 30px;
+    transition: .2s;
+    border: 1px solid #e56f00;
+}
+
+.contact {
+    width: 100%;
+}
+
+.contact h6 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    color: #10475a;
+    padding-bottom: 15px;
+}
+
+.contact ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.contact li {
+    font-weight: 300;
+}
+
+.contact li>a {
+    color: #3894ac;
+}
+
+.contact>a {
+    font-family: Montserrat, sans-serif;
+    color: #3894ac;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: block;
+    text-align: center;
+    border: 2px solid #3894ac;
+    transition: .2s;
+    text-decoration: none;
+}
+
+.contact>a:hover {
+    background-color: #3894ac;
+    color: #fff;
+}
+
+.follow-us {
+    color: #3894ac;
+    display: block;
+    margin-top: 20px;
+}
+
+.sm-icons {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.sm-icons i {
+    font-size: 1.8em;
+    margin-top: 10px;
+    color: #3894ac;
+}
+
+.sm-icons i:nth-child(2) {
+    margin-left: 40px;
+}
+
+.sm-icons i:hover {
+    color: #10475a;
 }
 
 .copyright {
     grid-area: copyright;
-    background-color: grey;
+    background-color: #10475a;
+    color: #fff;
+}
+
+.copyright ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    font-size: .9em;
+}
+
+.copyright ul li {
+    display: inline;
+}
+
+.copyright ul li a {
+    font-weight: 700;
+    color: #fff;
+}
+
+@media screen and (min-width: 500px) {
+    .request h4 {
+        font-size: 1.3em;
+    }
+    .services h5 {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .wrapper {
+        display: grid;
+        width: 100%;
+        grid-template-areas: "navbar" "nav2" "hero" "sidenav" "cards" "info" "services" "footer" "copyright";
+    }
+    .sidenav {
+        text-align: center;
+    }
+    .sidenav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .sidenav ul a {
+        flex: 50%;
+    }
+    .info {
+        flex-direction: row;
+    }
+    .prov-311 {
+        flex: 1.5;
+        height: 240px;
+    }
+    .request {
+        flex: 2;
+    }
+    .request h4 {
+        font-size: 1.5em;
+    }
+    .services {
+        padding-left: 30px;
+    }
+    .services h5 {
+        font-size: 1.7em;
+    }
+    .services h6 {
+        font-size: 1.3em;
+    }
+    .service-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .service-card {
+        flex: 50%;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .signup {
+        flex: 50%;
+        padding: 20px;
+    }
+    .contact ul {
+        font-size: 1em;
+    }
+    .contact>a {
+        padding: 30px;
+    }
+    .contact {
+        flex: 25%;
+        padding: 20px;
+    }
+    .contact h6 {
+        text-align: left;
+    }
+    .social-media {
+        padding-left: 40px;
+    }
+    .navbar {
+        grid-template-areas: "languages prov-logo search access";
+    }
+    .languages {
+        padding-left: 40px;
+    }
+    .languages select {
+        padding: 5px 10px 5px 0;
+    }
+    .prov-logo {
+        margin: 0 auto;
+    }
+    .search {
+        text-align: right;
+    }
+    .nav2 {
+        display: block;
+        background-color: #f9f9f9;
+    }
+    .nav2 ul {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .nav2 li {
+        font-family: Montserrat, sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 1.1em;
+        text-align: center;
+        align-self: center;
+        flex: 2;
+        color: #6a6a6a;
+    }
+    
+    .nav2 li>a {
+        padding: 25px 0;
+        color: #6a6a6a;
+        text-decoration: none;
+        width: 100%;
+        display: inline-block;
+        border-bottom: 5px solid transparent;
+    }
+    .nav2 li>a:hover {
+        border-bottom: 5px solid #e56f00;
+    }
 }
