@@ -38,60 +38,101 @@ body {
 .nav2 {
     grid-area: nav2;
     display: none;
+    background-color: #f9f9f9;
 }
+
 .nav2 ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
 }
 
-.city-hall {
-    position: relative;
+.nav2 li {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    text-align: center;
+    align-self: center;
+    flex: 2;
+    display: flex;
+    color: #6a6a6a;
+}
+
+.nav2 .nav2-li {
+    padding: 25px 0;
+    color: #6a6a6a;
+    text-decoration: none;
     width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.nav2-li-border {
+    border-bottom: 5px solid transparent;
+}
+
+.nav2 .nav2-li-border:hover {
+    border-bottom: 5px solid #e56f00;
 }
 
 .city-hall-dropdown {
+    background-color: #f1f1f1;
     display: none;
     position: absolute;
-    
+    top: 27%;
+    text-transform: capitalize;
+    border-top: 5px solid #e56f00;
 }
+
+.city-hall:hover .city-hall-dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
 .city-hall-dropdown a {
     display: inline-block;
     text-align: center;
-    padding: 20px;
     text-decoration: none;
+    font-size: .9em;
+    padding: 20px 5px;
+    color: #10475a;
 }
 
 .city-hall-dropdown a:hover {
-    background-color: #f1f1f1;
-}
-.city-hall:hover .city-hall-dropdown {
-    display: block;
-    position: absolute;
     background-color: #f9f9f9;
-    left: 0;
 }
 
-.doing-business {
-    position: relative;
-}
 .doing-business-dropdown {
+    background-color: #f1f1f1;
     display: none;
     position: absolute;
-    z-index: 1;
+    top: 27%;
+    text-transform: capitalize;
+    border-top: 5px solid #e56f00;
 }
+
+.doing-business:hover .doing-business-dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
 .doing-business-dropdown a {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    padding: 20px;
+    padding: 20px 5px;
+    font-size: .9em;
+    color: #10475a;
 }
-.doing-business:hover .doing-business-dropdown {
-    display: block;
-    position: absolute;
+
+.doing-business-dropdown a:hover {
     background-color: #f9f9f9;
-    width: 100%;
-    left: 0;
 }
+
 .prov-logo {
     grid-area: prov-logo;
     padding-left: 20px;
@@ -701,34 +742,43 @@ body {
     }
     .nav2 {
         display: block;
-        background-color: #f9f9f9;
+        /*background-color: #f9f9f9;*/
     }
-    .nav2 ul {
-        display: flex;
-        width: 90%;
-        margin: 0 auto;
+}
+
+@media screen and (min-width: 1033px) {
+    .city-hall-dropdown {
+        background-color: #f1f1f1;
+        display: none;
+        position: absolute;
+        top: 23%;
+        text-transform: capitalize;
+        border-top: 5px solid #e56f00;
     }
-    .nav2 li {
-        font-family: Montserrat, sans-serif;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 1px;
-        font-size: 1.1em;
+
+    .city-hall-dropdown a {
+        display: inline-block;
         text-align: center;
-        align-self: center;
-        flex: 2;
-        color: #6a6a6a;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 20px 15px;
+        color: #10475a;
     }
     
-    .nav2 li>a {
-        padding: 25px 0;
-        color: #6a6a6a;
-        text-decoration: none;
-        width: 100%;
-        display: inline-block;
-        border-bottom: 5px solid transparent;
+    .doing-business-dropdown {
+        background-color: #f1f1f1;
+        display: none;
+        position: absolute;
+        top: 23%;
+        text-transform: capitalize;
+        border-top: 5px solid #e56f00;
     }
-    .nav2 li>a:hover {
-        border-bottom: 5px solid #e56f00;
+    .doing-business-dropdown a {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 20px 15px;
+        color: #10475a;
     }
 }
